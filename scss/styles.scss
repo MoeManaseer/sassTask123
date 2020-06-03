@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url(https://fonts.google.com/specimen/Raleway);
-  font-weight: 700;
-}
+
 @font-face {
   font-family: 'Open Sans';
   src: url(https://fonts.google.com/specimen/Open+Sans);
@@ -21,8 +17,49 @@ $lighter-gray:hsl(0, 0%, 75%);
   max-width: 1440px;
   margin: 0px auto;
 }
+@media screen and (min-width: 700px) {
+  nav{
+    margin-left: 30px;
+  }
+  .header{
+    flex-direction: column;
+    margin-left: 30px;
+    div{
+      margin-top: 20px;
+    }
+  }
+  .body{
+    flex-direction: column;
+    margin-left: 30px;
+    div{
+      margin-top: 20px;
+    }
+  }
+  .signup{
+    flex-direction: column;
+    margin-left: 30px;
+    div{
+      margin-top: 20px;
+    }
+    input[type=email]{ 
+     
+      width: 400px;
+      
+    }
+  }
+  .footer{
+    margin-left: 30px;
+    div{
+      margin-top: 20px;
+    }
+  }
+  .img{
+    width: 350px;
+    height: 275px;
+  }
+}
 nav {
-  font-family: Raleway;
+  font-family: 'Raleway';
   margin: 30px 0;
   display: flex;
   justify-content: space-between;
@@ -42,12 +79,16 @@ nav {
   }
 }
 h1{
-  font-family: 'Raleway';
+  font-family: 'Sofia';
   
 }
 h3{
   font-family: 'Open Sans';
   font-weight: lighter;
+}
+.img{
+  width: 700px;
+  height: 550px;
 }
 .header {
   display:flex;
@@ -100,7 +141,6 @@ h3{
   display: flex;
   justify-content: space-between;
   color: white;
-  margin: 0px 0;
   padding: 100px 0;
   form{
     width: 100%;
@@ -116,7 +156,7 @@ h3{
       margin-top: 5px;
       border-radius: 4px;
       height: 36px;
-      width: 477px;
+      width: 440px;
       padding-left: 5px;
     }
   }
@@ -132,6 +172,7 @@ h3{
       a{
         color: white;
         text-decoration: none;
+        display: block;
       }
       h5{
         color: white;
