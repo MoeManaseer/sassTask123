@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(https://fonts.google.com/specimen/Raleway);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(https://fonts.google.com/specimen/Open+Sans);
+  font-weight: 400;
+}
+body{
+  margin: 0px;
+}
+$bright-blue: hsl(224, 93%, 58%);
+$dark-blue:hsl(243, 87%, 12%);
+$desaturated-blue:hsl(238, 22%, 44%);
+$moderate-cyan:hsl(170, 45%, 43%);
+$ligth-gray:hsl(240, 75%, 98%);
+$lighter-gray:hsl(0, 0%, 75%);
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+nav {
+  font-family: Raleway;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a{
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: black;
+  }
+}
+h1{
+  font-family: 'Raleway';
+  
+}
+h3{
+  font-family: 'Open Sans';
+  font-weight: lighter;
+}
+.header {
+  display:flex;
+  align-items: center;
+  padding: 100px 0;
+  #border{
+    width: 100%;
+    margin: 0px
+  }
+  form{
+    input[type=submit]{
+      width: 25%;
+      color: white;
+      background-color: $bright-blue;
+      border-radius: 4px;
+      height: 40px;
+      border: 0px;
+      margin-left: 6px;
+    }
+    input[type=email]{ 
+      width: 57%;
+      padding: 0px 5px;
+      
+      border-radius: 4px;
+      height: 36px;
+    }
+  }
+  
+}
+.body{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  a{
+    color: $moderate-cyan;
+  }
+  .box{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    width: 360px;
+    height: 210px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+}
+.signup{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0px 0;
+  padding: 100px 0;
+  form{
+    width: 100%;
+    input[type=submit]{
+      color: white;
+      background-color: $bright-blue;
+      border-radius: 4px;
+      height: 40px;
+      border: 0px;
+      margin-top: 15px;
+    }
+    input[type=email]{ 
+      margin-top: 5px;
+      border-radius: 4px;
+      height: 36px;
+      width: 477px;
+      padding-left: 5px;
+    }
+  }
+}
+.footer{
+  padding: 100px 0;
+  .info{
+    padding: 15px 0;
+    display: flex;
+    div{
+      flex-direction: column;
+      margin-right: 300px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      h5{
+        color: white;
+      }
+    }
+  }
+}
