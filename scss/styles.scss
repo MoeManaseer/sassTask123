@@ -17,7 +17,7 @@ $lighter-gray:hsl(0, 0%, 75%);
   max-width: 1440px;
   margin: 0px auto;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   nav{
     margin-left: 30px;
   }
@@ -59,6 +59,7 @@ $lighter-gray:hsl(0, 0%, 75%);
   }
 }
 nav {
+  
   font-family: 'Raleway';
   margin: 30px 0;
   display: flex;
@@ -91,6 +92,7 @@ h3{
   height: 550px;
 }
 .header {
+  
   display:flex;
   align-items: center;
   padding: 100px 0;
