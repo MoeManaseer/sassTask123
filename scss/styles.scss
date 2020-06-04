@@ -1,15 +1,8 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url(https://fonts.google.com/specimen/Raleway);
-  font-weight: 700;
-}
+
 @font-face {
   font-family: 'Open Sans';
   src: url(https://fonts.google.com/specimen/Open+Sans);
   font-weight: 400;
-}
-body{
-  margin: 0px;
 }
 $bright-blue: hsl(224, 93%, 58%);
 $dark-blue:hsl(243, 87%, 12%);
@@ -17,13 +10,59 @@ $desaturated-blue:hsl(238, 22%, 44%);
 $moderate-cyan:hsl(170, 45%, 43%);
 $ligth-gray:hsl(240, 75%, 98%);
 $lighter-gray:hsl(0, 0%, 75%);
+
+@media screen and (max-width: 700px) {
+  nav{
+    margin-left: 30px;
+  }
+  .header{
+    flex-direction: column-reverse;
+    margin: 0 30px;
+    div{
+      margin-top: 20px;
+    }
+  }
+  .body{
+    flex-direction: column-reverse;
+    margin: 0 30px;
+    div{
+      margin-top: 20px;
+    }
+  }
+  .signup{
+    flex-direction: column;
+    margin: 0 30px;
+    div{
+      margin-top: 20px;
+    }
+    .form{
+      .email{
+        max-width: 80%;
+      }
+    }
+  }
+  .footer{
+    margin:0 30px;
+    div{
+      margin-top: 20px;
+    }
+    .info{
+      flex-direction: column;
+    }
+  }
+}
+body{
+  margin: 0px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0px auto;
 }
 nav {
-  font-family: Raleway;
-  margin: 30px 0;
+  font-family: 'Raleway';
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   ul {
@@ -41,24 +80,21 @@ nav {
     color: black;
   }
 }
-h1{
-  font-family: 'Raleway';
-  
-}
-h3{
-  font-family: 'Open Sans';
-  font-weight: lighter;
-}
 .header {
   display:flex;
   align-items: center;
   padding: 100px 0;
-  #border{
-    width: 100%;
-    margin: 0px
+  h3{
+    font-family: 'Open Sans';
+    font-weight: lighter;
   }
-  form{
-    input[type=submit]{
+  h1{
+    font-family: 'Sofia';
+    
+  }
+
+  .form{
+    .submit{
       width: 25%;
       color: white;
       background-color: $bright-blue;
@@ -67,7 +103,7 @@ h3{
       border: 0px;
       margin-left: 6px;
     }
-    input[type=email]{ 
+    .email{ 
       width: 57%;
       padding: 0px 5px;
       
@@ -75,7 +111,15 @@ h3{
       height: 36px;
     }
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   
+}
+.border{
+  width: 100%;
+  height: 100%;
 }
 .body{
   display: flex;
@@ -91,20 +135,47 @@ h3{
     background-color: white;
     width: 360px;
     height: 210px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+    padding: 30px 30px 0 30px;
+    .user__info{
+      display: flex;
+      div{
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .user__info__photo{
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+      }
+      .user__info__work{
+        font-weight: lighter;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h3{
+    font-family: 'Open Sans';
+    font-weight: lighter;
+  }
+  h1{
+    font-family: 'Sofia';
+    
+  }
+  h5{
+    display: inline;
   }
 }
 .signup{
   display: flex;
   justify-content: space-between;
   color: white;
-  margin: 0px 0;
   padding: 100px 0;
-  form{
+  .form{
     width: 100%;
-    input[type=submit]{
+    .submit{
       color: white;
       background-color: $bright-blue;
       border-radius: 4px;
@@ -112,13 +183,21 @@ h3{
       border: 0px;
       margin-top: 15px;
     }
-    input[type=email]{ 
+    .email{ 
       margin-top: 5px;
       border-radius: 4px;
       height: 36px;
       width: 477px;
       padding-left: 5px;
     }
+  }
+  h3{
+    font-family: 'Open Sans';
+    font-weight: lighter;
+  }
+  h1{
+    font-family: 'Sofia';
+    
   }
 }
 .footer{
@@ -132,9 +211,11 @@ h3{
       a{
         color: white;
         text-decoration: none;
+        display: block;
       }
       h5{
         color: white;
+        display: inline;
       }
     }
   }
